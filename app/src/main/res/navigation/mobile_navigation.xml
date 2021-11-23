@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.it18.famous_poetries.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.it18.famous_poetries.ui.gallery.GalleryFragment"
+        android:label="Allama Iqbal"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.it18.famous_poetries.ui.slideshow.SlideshowFragment"
+        android:label="Mirza Ghalib"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/poet_1"
+        android:name="com.it18.famous_poetries.ui.poet_1"
+        android:label="Ahmad Faraz"
+        tools:layout="@layout/fragment_poet_1" />
+    <fragment
+        android:id="@+id/poet_2"
+        android:name="com.it18.famous_poetries.ui.poet_2"
+        android:label="Jaun Elia"
+        tools:layout="@layout/fragment_poet_2" />
+</navigation>
